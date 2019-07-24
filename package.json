@@ -4,7 +4,10 @@
   "description": "A simple web server example",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "app-module-path": "^2.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.11.0",
+    "pg-promise": "^8.7.5"
   },
   "devDependencies": {},
   "scripts": {

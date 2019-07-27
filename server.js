@@ -3,7 +3,6 @@
 
 require('app-module-path').addPath(`${__dirname}`);
 const express = require('express')
-databaseMigrator = require('database/migrator')
 const app = express()
 const port = 3000
 
@@ -45,9 +44,5 @@ app.listen(port, (err) => {
         return console.log('An error occurred during startup.', err)
     }
 
-    console.log('=====================================')
     console.log(`The server is listening on port ${port}.`)
-    console.log('=====================================')
-
-    databaseMigrator.update()
 })
